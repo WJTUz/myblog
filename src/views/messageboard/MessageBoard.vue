@@ -1,10 +1,10 @@
 <template>
-  <div>我是博客页面</div>
+  <div>我是留言板</div>
 </template>
 
 <script>
   export default {
-    name: "Blog"
+    name: "MessageBoard"
   }
 </script>
 

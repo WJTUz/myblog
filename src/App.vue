@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <main-nav-bar/>
+    <router-view class="main-body"></router-view>
+
   </div>
 </template>
 
 <script>
-import Home from "./views/home/Home";
+import MainNavBar from "./components/content/mainnavbar/MainNavBar";
 export default {
   name: 'App',
   components: {
-    Home
+    MainNavBar
   }
 }
 </script>
 
 <style>
-#app {
-  
-}
+  @import "assets/css/base.css";
+  .main-body{
+    display: flex;
+  }
 </style>

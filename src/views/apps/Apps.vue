@@ -1,10 +1,10 @@
 <template>
-  <div>我是博客页面</div>
+  <div>我是小应用</div>
 </template>
 
 <script>
   export default {
-    name: "Blog"
+    name: "Apps"
   }
 </script>
 

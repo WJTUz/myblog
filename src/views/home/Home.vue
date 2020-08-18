@@ -1,21 +1,20 @@
 <template>
   <div>
-    <home-nav-bar/>
     <div class="home-page">
-      <div class="left">left</div>
-      <div class="center">center</div>
-      <div class="right">right</div>
+      <div class="left"><h2>我是首页左边的数据</h2></div>
+      <div class="center"><h2>我是首页中间的数据</h2></div>
+      <div class="right"><alert-box/></div>
     </div>
   </div>
 
 </template>
 
 <script>
-  import HomeNavBar from "./childrencomps/HomeNavBar";
+  import AlertBox from "../../components/content/alertbox/AlertBox";
   export default {
     name: "Home",
     components: {
-      HomeNavBar
+      AlertBox
     }
   }
 </script>
@@ -23,25 +22,30 @@
 <style scoped>
   .home-page {
     display: flex;
-    justify-content: center;
+    width: 1080px;
+    margin: 0 auto;
   }
 
   .left {
     flex: 1;
     margin-top: 30px;
     height: 400px;
+    text-align: center;
+    flex-grow: 0.5;
   }
 
   .center {
     flex: 1;
     margin-top: 30px;
     height: 1000px;
-    flex-grow: 2
+    flex-grow: 2;
+    text-align: center;
   }
 
   .right {
     flex: 1;
     margin-top: 30px;
-    height: 300px;
+    text-align: center;
+    flex-grow: 0.5;
   }
 </style>

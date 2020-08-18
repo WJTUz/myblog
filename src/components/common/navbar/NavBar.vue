@@ -18,7 +18,7 @@
     text-align: center;
     height: 40px;
     line-height: 40px;
-    box-shadow: 0 1px 1px rgba(100,100,100,0.1);
+    box-shadow: 0 2px 0 rgba(100,100,100,0.1);
   }
 
   .left, .right{
